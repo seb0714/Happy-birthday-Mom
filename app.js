@@ -7,7 +7,7 @@ function showMessage() {
 
     outside.style.display = 'none';
     console.log('Happy Birthday, Mom!');
-    alert('Happy Birthday, Mom! -Seb.');
+    // alert('Happy Birthday, Mom! -Seb.');
 
     inside.innerHTML = `
         <div class="letter">
@@ -23,6 +23,10 @@ function showMessage() {
     `;
 
     inside.style.display = 'flex';
-    body.style.backgroundColor = '#fff4e6';
+    body.style.backgroundImage = 'url("source/fam-pic.jpg';
+    body.style.backgroundSize = '300%';
+    body.style.backdropFilter = 'blur(5px)';
+    body.style.backgroundPosition = 'center';
+    body.style.backgroundRepeat = 'no-repeat';
     song.play();
 }
